@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            margin: 200px 200px;
+        }
+        .card{
+            height: 400px;
+            width: 400px;
+            border: 5px solid salmon;
+            text-align: center;
+            font-size: xx-large;
+            margin: auto;
+        }
+        button{
+            font-size: 30px;
+        }
+        p{
+            border: 2px solid rgb(6, 82, 6);
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+            <h2>Counter App</h2>
+        <p id="opr">0</p>
+        <button onclick="inc()">+</button>
+        <button onclick="dec()">-</button>
+    </div>
+    <script>
+        var curr = 0;
+        function inc(){
+            document.getElementById("opr").innerHTML=curr+1;
+        }
+        function dec(){
+            document.getElementById("opr").innerHTML=curr-1;
+        }
+    </script>
+
+
+    
+
+</body>
+</html>
