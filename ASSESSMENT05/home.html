@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<style>
+    .card{
+        /* margin-right: 200px; */
+        width: 300px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        
+        
+        /* margin-top: ; */
+    }
+</style>
+<body>
+    <p id="num" style="font-size: 200px;text-align: center;">0</p>
+    <div class="card">
+        <button onclick="decrement()">DECREMENT</button>
+        <button onclick="reset()">RESET</button>
+        <button onclick="increment()">INCREMENT</button>
+    </div>
+    <script>
+        const increment=()=>{
+            var curr=parseInt(document.getElementById("num").innerText);
+            if(curr>=10){
+                alert("more than 10");
+            }
+            else{
+                document.getElementById("num").innerText=curr+1;
+            }
+            
+        }
+
+        const decrement=()=>{
+            var curr=parseInt(document.getElementById("num").innerText);
+            if(curr<=0){
+                alert("Negative integer");
+            }
+            else{
+                document.getElementById("num").innerText=curr-1;
+            }
+            
+        }
+
+        const reset=()=>{
+            var curr=parseInt(document.getElementById("num").innerText);
+            
+                document.getElementById("num").innerHTML=0;
+            
+            
+            
+        }
+
+    </script>
+    
+</body>
+</html>

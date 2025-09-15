@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .abc{
+        height: 400px;
+        width: 400px;
+        background-color: blueviolet;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+</style>
+<body>
+    <div class="abc">
+        <img src="download (1).jpg" alt="" id="xyz"height="300px" width="300px" >
+        <hr>
+        <button onclick="change()">Change Image</button>
+        <button onclick="hide()">Hide Image</button>
+    </div>
+
+    <script>
+        const change=()=>{
+                document.getElementById("xyz").src="img.jpg";
+        }
+        const hide=()=>{
+            document.getElementById("xyz").style.display="none";
+        }
+
+    </script>
+</body>
+</html>
