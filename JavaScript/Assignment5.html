@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .card{
+            height: 400px;
+            width: 400px;
+            border: 5px solid rgb(255, 112, 96);
+            text-align: center;
+            font-size: xx-large;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(255, 162, 151);
+        }
+        button{
+            font-size: 30px;
+            margin: 10px;
+        }
+        p{
+            border: 2px solid rgb(6, 82, 6);
+            border-radius: 50%;
+            padding: 20px;
+            width: 80px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Counter App</h2>
+        <p id="opr">0</p>
+        <button onclick="inc()">+</button>
+        <button onclick="dec()">-</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script>
+        let curr = 0;
+
+        function updateDisplay() {
+            document.getElementById("opr").innerHTML = curr;
+        }
+
+        function inc(){
+            if(curr < 10){
+                curr++;
+                updateDisplay();
+            } else {
+                alert("⚠️ Maximum value reached (10)");
+            }
+        }
+
+        function dec(){
+            if(curr > 0){
+                curr--;
+                updateDisplay();
+            } else {
+                alert("⚠️ Minimum value reached (0)");
+            }
+        }
+
+        function reset(){
+            curr = 0;
+            updateDisplay();
+        }
+    </script>
+
+
+    
+
+</body>
+</html>

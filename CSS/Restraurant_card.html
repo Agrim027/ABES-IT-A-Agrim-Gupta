@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Cards</title>
+  <style>
+    body {
+      background: #f5caa5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1{
+        text-align: center;
+        text-decoration-line: underline;
+    }
+    .main {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 15px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+    <h1>Restaurant</h1>
+  <div class="main">
+    <div class="card">
+      <h2>Burger</h2>
+      <img src="Burger.png" alt="Burger">
+      <p>
+        Juicy grilled burger with fresh veggies and cheese, perfect for satisfying your hunger cravings.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Fried Chicken</h2>
+      <img src="Chicken.png" alt="Fried Chicken">
+      <p>
+        Crispy golden fried chicken seasoned with secret spices for the ultimate crunchy experience.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Noodles</h2>
+      <img src="Noodles.png" alt="Noodles">
+      <p>
+        Delicious stir-fried noodles tossed with fresh vegetables and savory sauces for a quick meal.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
