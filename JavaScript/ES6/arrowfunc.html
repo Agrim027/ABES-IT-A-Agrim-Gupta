@@ -6,13 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="func"></p>
     <script>
         
-        function abes()
-        {
-            document.write("We are student")
+        // function abes()
+        // {
+        //     document.write("We are student")
+        // }
+        // abes();
+
+        let abes=()=>{
+            return "Java is good";
         }
-        abes();
+        document.getElementById("func").innerHTML=abes();
     </script>
 </body>
 </html>
