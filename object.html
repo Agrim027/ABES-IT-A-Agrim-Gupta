@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="func"></p>
+    <script>
+        // const toy = {
+        //     toy1:"car",
+        //     toy2:"apple",
+        //     toy3:"elephant"
+        // }
+        // document.getElementById("func").innerHTML=toy.toy3;
+
+        const toy = new Object({
+            toy1:"car",
+            toy2:"apple",
+            toy3:"elephant"
+        });
+        document.getElementById("func").innerHTML=toy.toy3;
+        document.getElementById("func").style.fontSize="100px";
+    </script>
+</body>
+</html>
