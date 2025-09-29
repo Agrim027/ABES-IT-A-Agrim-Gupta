@@ -15,6 +15,18 @@
         })
         console.log(mypromise);
         
+        mypromise.then((msg)=>{
+            console.log(msg);
+            
+        })
+
+        mypromise.catch((err)=>{
+            console.log(err);
+            
+        })
+        .finally(()=>{
+            console.log("We are student of ABES");
+        })
     </script>
 </body>
 </html>
