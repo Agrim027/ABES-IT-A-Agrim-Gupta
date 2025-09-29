@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        const mypromise = new Promise((resolve, reject)=>{
+            const password = "agrim123";
+            if(password.length > 8){
+                resolve("Password length is OK")
+            }
+            else{
+                reject("Password is not good")
+            }
+        })
+        console.log(mypromise);
+        
+    </script>
+</body>
+</html>
