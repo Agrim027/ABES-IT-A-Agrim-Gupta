@@ -1,0 +1,16 @@
+#book{
+  border: 5px solid red;
+  height: 300px;
+  width: 300px;
+  background-color:coral;
+  text-align: center;
+  
+}
+
+#line{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
