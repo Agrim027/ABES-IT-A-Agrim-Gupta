@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <style>
+        body{ 
+            background: linear-gradient(to right, rgb(224, 22, 22), rgb(224, 77, 77));
+        }
+    </style>
+</head>
+<body>
+    <h2>Input&lt;Attributes&gt;</h2>
+    <form action="sample/">
+        
+        <label for="text">Text</label>
+            <input type="text" id="text" />
+        <label for="password">Password</label>    
+            <input type="password" id="password" />
+        <!-- Caan be written as -->
+        <input type="checkbox" />
+        <label>checkbox</label>
+        <input type="time" />
+        <label>Time</label>
+        <input type="number" />
+        <label>Number</label><br/>
+        <input type="color" />
+        <label>Color</label>
+        <input type="range" />
+        <label>Range</label>
+    </form>
+<hr/>
+    <form action="https://www.instagram.com">
+        <div>
+        <label for="username">Username</label>
+            <input type="text" placeholder="Username" id="username" />
+        </div>
+        <div>
+        <label for="password">Password</label>
+            <input type="password" placeholder="password" id="password">
+        </div>
+        <div>
+            <label for="age">Enter Age</label>
+            <input type="number" placeholder="age" id="age"/>
+        </div>
+        
+        <button type="search">Search</button>
+        <button type="reset">Reset</button>
+        
+    </form>
+<hr/>
+    <form action="https://www.youtube.com/results">
+        <div>
+            <label for="youtube">Search</label>
+            <input type="text" placeholder="Search in youtube" id="youtube" name="search_query"/>
+            <button type="search">Search</button>
+        </div>
+
+    </form>
+
+<hr/>
+    <form action="https://www.apple.com/in/store">
+        <input type="text" placeholder="Type apple" id="apple" name="q">
+        <label for="apple"></label>
+        <button type="search">Search</button>
+    </form>
+<hr/>
+    <form>
+        <label for="age">I am 18+</label>
+        <input type="checkbox" id="age" name="age" checked/>
+<hr/>
+        <input type="radio" name="fruit" id="apple"/>
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" id="orange"/>
+        <label for="orange">orange</label>
+        <input type="radio" name="fruit" id="mango"/>
+        <label for="mango">mango</label>
+<hr/>
+       <div>
+        Choose your Profession:
+        <select name="profession" id="profession">
+            <option>Select your option &hearts;</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="professor">Professor</option>
+            <option value="developer">Developer</option>
+        </select>
+       </div> 
+    </form>
+    <h2>Registration Form</h2>
+    <form action="https://www.google.com/search">
+       <div>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+       </div>
+       <div> 
+       <label for="gender">Please select your gender</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <lable for="terms">Do you agree to all terms of service</lable>
+        <input type="checkbox" id="terms" />
+        <lable for="terms">Yes, I agree</lable>
+    </div>
+        <button type="submit">Register</button>
+    </form>
+
+
+</body>
+</html>

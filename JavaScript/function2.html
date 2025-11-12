@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .purple{
+            background-color: purple;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body id="color">
+    <div>
+    <button class="red" onclick="red()">Red</button>
+    <button class="blue" onclick="blue()">Blue</button>
+    <button class="green" onclick="green()">Green</button>
+    <button class="purple" onclick="purple()">Purple</button>
+    <button class="yellow" onclick="yellow()">Yellow</button>
+    </div>
+    <script>
+        function red(){
+            document.getElementById("color").style.backgroundColor="red";
+        }
+        function blue(){
+            document.getElementById("color").style.backgroundColor="blue";
+        }
+        function green(){
+            document.getElementById("color").style.backgroundColor="green";
+        }
+        function purple(){
+            document.getElementById("color").style.backgroundColor="purple";
+        }
+        function yellow(){
+            document.getElementById("color").style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>

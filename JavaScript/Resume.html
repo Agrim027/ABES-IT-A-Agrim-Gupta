@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrim Gupta - Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      display: flex;
+      justify-content: center;
+      background: #eef1f6;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      max-width: 1000px;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    /* Sidebar */
+    .sidebar {
+      background: #1f2a44;
+      color: #fff;
+      padding: 25px 20px;
+    }
+    .sidebar img {
+        max-width: 160px;   /* max photo width */
+        height: auto;       /* keep natural ratio */
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 20px;
+        border: 3px solid #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        width: 100%;
+        object-fit: cover;  /* ensures neat crop if photo ratio is off */
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin: 10px 0 5px;
+      font-size: 22px;
+      letter-spacing: 0.5px;
+    }
+    .sidebar p, 
+    .sidebar li, 
+    .sidebar a {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .sidebar a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .sidebar h3 {
+      margin-top: 25px;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .sidebar ul {
+      padding-left: 18px;
+      margin: 10px 0;
+    }
+
+    /* Main Content */
+    .main {
+      padding: 30px 40px;
+    }
+    .main h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #1f2a44;
+    }
+    .main p {
+      margin: 8px 0 18px;
+      font-size: 15px;
+      color: #666;
+    }
+    .main h2 {
+      font-size: 20px;
+      margin-top: 25px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+      color: #1f2a44;
+    }
+    .main ul {
+      padding-left: 18px;
+      margin: 12px 0;
+    }
+    .main li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    /* Strengths section */
+    .strengths li {
+      list-style: "✔ ";
+      color: #1f2a44;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="profile.png" alt="Profile Photo">
+      <h2>Agrim Gupta</h2>
+      <p style="text-align:center;">
+        <a href="mailto:agrimg8@gmail.com">agrimg8@gmail.com</a>
+      </p>
+
+      <h3>Education</h3>
+      <p><b>ABES Engineering College</b><br>
+      2023 - 2027<br>
+      B.Tech (Information Technology)</p>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>OOPs with Java</li>
+        <li>C, C++ (Basics)</li>
+        <li>Frontend Development (HTML, CSS, JavaScript)</li>
+        <li>Problem Solving</li>
+        <li>MS Office (Word, Excel, PPT)</li>
+      </ul>
+
+      <h3>Roles</h3>
+      <p>Talentrove Club Member</p>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main">
+      <h1>Agrim Gupta</h1>
+      <p><b>B.Tech Student - Information Technology</b></p>
+
+      <h2>Certifications / Projects</h2>
+      <p><b>Coffee Shop Website Project</b> – Showcases my frontend development skills (HTML, CSS, JS)</p>
+      <ul>
+        <li>Certification in Data Structures & Algorithms (Java)</li>
+        <li>22-week Problem Solving Certification</li>
+        <li>Core Java Programming Certification</li>
+      </ul>
+
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Problem-solving ability</li>
+        <li>Good communication</li>
+        <li>Teamwork and collaboration</li>
+        <li>Creativity and Innovation</li>
+      </ul>
+
+      <h2>Strengths</h2>
+      <ul class="strengths">
+        <li>Patience and perseverance</li>
+        <li>Adaptability and flexibility</li>
+        <li>Quick learner</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

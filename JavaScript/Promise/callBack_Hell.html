@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        function getdata(dataId, getnextdata){
+        setTimeout(()=>{
+            console.log("Data", dataId);
+            if(getnextdata){
+                getnextdata();
+            }
+            
+        },3000);
+    }
+    getdata(1,()=>{
+        getdata(2, ()=>{
+            getdata(3,()=>{
+                getdata(4);
+            })
+        })
+    });
+    </script>
+</body>
+</html>

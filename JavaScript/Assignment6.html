@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var x = 11, y = 17;
+        for(var i=1; i<=10; i++){
+            if((x*i)%2 == 1){
+                document.write(x + " x " + i + " = " + x*i + "<br>");
+            }
+            else{
+                document.write(x + " x " + i + " = " + x*i + "<br>");
+            }
+        }
+        document.write("<br>")
+        for(var i=1; i<=10; i++){
+            if((y*i)%2 == 1){
+                document.write(y + " x " + i + " = " + y*i + "<br>");
+            }
+            else{
+                document.write(y + " x " + i + " = " + y*i + "<br>");
+            }
+        }
+        document.write("<br>")
+        document.write("<br> Even Numbers ->" );
+        for(var i = 1; i<=10; i++){
+            if((x*i)%2 == 0){
+                document.write(x*i + " ");
+            }
+            if((y*i)%2 == 0){
+                document.write(y*i + " ");
+            }
+        }
+        document.write("<br> Odd Numbers ->"  );
+        for(var i = 1; i<=10; i++){
+            if((y*i)%2 == 1){  
+                document.write(y*i + " ");
+            }
+            if((y*i)%2 == 1){
+                document.write(x*i + " ");
+            }
+
+        }
+
+    </script>
+</body>
+</html>

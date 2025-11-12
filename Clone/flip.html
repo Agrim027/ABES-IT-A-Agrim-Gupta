@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Navbar Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 16px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2874f0;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      width: 400px;
+      background: lightgrey;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      padding: 8px 12px;
+      flex: 1;
+      background: transparent;
+    }
+
+    .search-bar button {
+      border: none;
+      background: #2874f0;
+      color: white;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar-right a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      background: white;
+      padding: 12px 40px;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .category img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+    .banner {
+      margin: 16px auto;
+      width: 95%;
+    }
+
+    .banner img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .section {
+      background: white;
+      margin: 20px;
+      padding: 16px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #fafafa;
+      padding: 16px;
+      text-align: center;
+      border-radius: 6px;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #333;
+    }
+
+    .product-card span {
+      font-size: 13px;
+      color: #2874f0;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #172337;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+  <div class="navbar-left">
+    <div class="logo">Flipkart</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for Products, Brands and More">
+      <button><img src="https://img.icons8.com/ios-filled/20/ffffff/search--v1.png"/></button>
+    </div>
+  </div>
+  <div class="navbar-right">
+    <a href="#" class="login-btn">Login</a>
+    <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/shopping-cart.png"/> Cart</a>
+    <a href="#">Become a Seller</a>
+  </div>
+</div>
+
+  <div class="categories">
+    <div class="category">
+      <img src="minutes.png" alt="">
+      <span>Minutes</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/iphone.png" alt="">
+      <span>Mobiles & Tablets</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/fashion-model.png" alt="">
+      <span>Fashion</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/headphones.png" alt="">
+      <span>Electronics</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/sofa.png" alt="">
+      <span>Home & Furniture</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/tv.png" alt="">
+      <span>TVs & Appliances</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/airplane-take-off.png" alt="">
+      <span>Flight Bookings</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/teddy-bear.png" alt="">
+      <span>Beauty, Food..</span>
+    </div>
+    <div class="category">
+      <img src="https://img.icons8.com/color/96/000000/grocery-bag.png" alt="">
+      <span>Grocery</span>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="Banner.webp" alt="Banner">
+  </div>
+  <div class="banner">
+    <img src="bigBillion.webp" alt="Big Billion Days">
+  </div>
+
+  <div class="section">
+    <h2>Best of Electronics</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://img.icons8.com/color/96/000000/laptop.png" alt="">
+        <p>Laptops</p>
+        <span>From ₹25,999</span>
+      </div>
+      <div class="product-card">
+        <img src="https://img.icons8.com/color/96/000000/tablet.png" alt="">
+        <p>Tablets</p>
+        <span>From ₹9,999</span>
+      </div>
+      <div class="product-card">
+        <img src="https://img.icons8.com/color/96/000000/printer.png" alt="">
+        <p>Printers</p>
+        <span>From ₹3,499</span>
+      </div>
+      <div class="product-card">
+        <img src="https://img.icons8.com/color/96/000000/smartphone.png" alt="">
+        <p>Smartphones</p>
+        <span>From ₹12,499</span>
+      </div>
+      <div class="product-card">
+        <img src="https://img.icons8.com/color/96/000000/headset.png" alt="">
+        <p>Headphones</p>
+        <span>From ₹599</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Flipkart Clone</p>
+  </footer>
+
+</body>
+</html>
+
+
+</body>
+</html>

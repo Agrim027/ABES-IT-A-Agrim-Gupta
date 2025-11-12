@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div>
+    
+  <img src="download.jpeg">
+  <p id="name">YOUR NAME</p>
+  <p>B.Tech(IT)</p>
+  <p>Language</p>
+  <ul>
+    <li id="lang1"></li>
+    <li id="lang2"></li>
+    <li id="lang3"></li>
+  </ul>
+  <p id="add">Address</p>
+  </div>
+<hr>
+<br>
+
+  <div>
+    
+    Your Name: <input id="naam" type="text">
+    Language : <input id="langu1" type="text">
+    <input id="langu2" type="text">
+    <input id="langu3" type="text">
+    <br><br>
+    Address: <input type="textarea"id="Address">
+    <button onclick="submit()">Submit</button>
+  
+
+  </div>
+
+  <script>
+    function submit(){
+      let name=document.getElementById("naam").value;
+      document.getElementById("name").innerHTML=name;
+
+      let lang1=document.getElementById("langu1").value;
+      document.getElementById("lang1").innerHTML=lang1;
+
+      let lang2=document.getElementById("langu2").value;
+      document.getElementById("lang2").innerHTML=lang2;
+
+      let lang3=document.getElementById("langu3").value;
+      document.getElementById("lang3").innerHTML=lang3;
+
+      let add=document.getElementById("Address").value;
+      document.getElementById("add").innerHTML=add;
+
+    }
+  </script>
+</body>
+</html>

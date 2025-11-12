@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            background: #4CAF50;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            transition:0.3s ease;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+    </style>
+</head>
+
+<body>
+        <div id="first"><img id="change" src="Burger.png" alt="">
+        </div>
+        <button onclick="hide()">Hide</button>
+        <button onclick="change()">Change</button>
+        <button onclick="show()">Show</button>
+    <script>
+        function hide(){
+            document.getElementById("change").style.display="none";
+        }
+        function change(){
+            document.getElementById("change").src="download.jpeg";
+        }
+        function show(){
+    document.getElementById("change").style.display="inline-block";
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simplest Todo List</title>
+    <style>
+    body {
+        display: flex;
+        background: #f4f4f4;
+        padding-top: 40px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 19px;
+        text-align: center;
+        width: 300px;
+ }
+    input, button {
+        padding: 5px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        margin: 5px 0;
+    }
+    .deleteBtn {
+        margin-left: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <input id="taskInput" placeholder="Add a task" />
+        <button onclick="addTask()">Add</button>
+        <ul id="todoList"></ul>
+    </div>
+    <script>
+        function addTask() {
+            var input = document.getElementById('taskInput');
+            var text = input.value;
+            if (text === '') return;
+            
+            var li = document.createElement('li');
+            li.textContent = text;
+            
+            var del = document.createElement('button');
+            del.textContent = 'Delete';
+            del.className = 'deleteBtn';
+            del.onclick = function() {
+        li.remove();
+    };
+
+      li.appendChild(del);
+      document.getElementById('todoList').appendChild(li);
+      input.value = '';
+    }
+    </script>
+</body>
+</html>

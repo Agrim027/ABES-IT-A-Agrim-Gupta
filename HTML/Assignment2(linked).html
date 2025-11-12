@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Booking Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .navbar img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .navbar h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h3 {
+      text-align: center;
+      color: #333;
+    }
+
+    .radio-group {
+      margin: 15px 0;
+    }
+
+    .radio-group input {
+      margin-right: 5px;
+    }
+
+    .thankyou {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <img src="png-transparent-white-and-gray-bus-illustration-bus-papua-new-guinea-icon-bus-hd-compact-car-school-bus-mode-of-transport-removebg-preview.png" alt="Logo">
+    <h2>Sheet Book</h2>
+  </div>
+
+  <div class="container">
+    <h3>* Welcome to Bus Booking System *</h3>
+
+    <form>
+      <label>Select your bill by:</label>
+      <div class="radio-group">
+        <input type="radio" name="payment" value="upi"> UPI
+      </div>
+      <div class="radio-group">
+        <input type="radio" name="payment" value="atm"> ATM
+      </div>
+
+      <p class="thankyou">Thank you for choosing our services</p>
+    </form>
+  </div>
+</body>
+</html>
