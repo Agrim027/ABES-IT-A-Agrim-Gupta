@@ -7,7 +7,23 @@ app.get('/',(req , res)=>{
 });
 
 app.get('/about',(req , res)=>{
-    res.send(`hi this is my first About`);
+    const students = [
+        {
+            id:1,
+            name:"Agrim",
+            class:"IT-A",
+        },
+        {
+            id:2,
+            name:"Agraj",
+            class:"IT-A",
+        },
+        {
+            id:3,
+            name:"Umang",
+            class:"IT-A",
+        }
+    ];
 });
 
 app.get('/contact',(req , res)=>{
