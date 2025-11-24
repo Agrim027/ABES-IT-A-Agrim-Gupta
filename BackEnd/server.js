@@ -22,6 +22,16 @@ app.get('/about',(req , res)=>{
             id:3,
             name:"Umang",
             class:"IT-A",
+        },
+        {
+            id:4,
+            name:"Agrim",
+            class:"IT-A",
+        },
+        {
+            id:5,
+            name:"Agrim",
+            class:"IT-A",
         }
     ];
     res.json(students);
