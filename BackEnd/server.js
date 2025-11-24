@@ -38,7 +38,6 @@ app.get('/about',(req , res)=>{
     res.send(students);
 });
 
-
 app.get('/contact',(req , res)=>{
     res.send(`hi this is My Contact`);
 });
