@@ -36,7 +36,6 @@ app.get('/about',(req , res)=>{
     ];
     // res.json(students);
     res.send(students);
-
 });
 
 
