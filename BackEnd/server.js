@@ -24,6 +24,7 @@ app.get('/about',(req , res)=>{
             class:"IT-A",
         }
     ];
+    res.json(students);
 });
 
 app.get('/contact',(req , res)=>{
