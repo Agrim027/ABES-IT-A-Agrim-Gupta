@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express()
 const port = 8080;
+const cors=require('cors');
+
+app.use(cors({
+  origin: 'http://localhost:5174'
+}));
 
 app.get('/',(req , res)=>{
     res.send(`<h1>hi this is my first server</h1>`);
@@ -41,13 +46,6 @@ app.get('/about',(req , res)=>{
 app.get('/contact',(req , res)=>{
     res.send(`hi this is My Contact`);
 });
-
-
-
-
-
-
-
 
 
 
