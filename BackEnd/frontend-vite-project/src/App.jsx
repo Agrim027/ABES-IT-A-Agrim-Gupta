@@ -13,6 +13,7 @@ function App() {
   //     .catch(err => console.error("Error fetching data:", err));
   // }, []);
 
+  
   useEffect(()=>{
     axios.get('http://localhost:8080/about')
     .then((res)=>{
