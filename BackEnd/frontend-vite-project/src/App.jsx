@@ -27,8 +27,13 @@ function App() {
     <div className="App">
       {Fa1.map((Fa1, i) => (
         <div key={Fa1.id}>
-          <h3>{Fa1.name}</h3>
-          <h3>{Fa1.class}</h3>
+          <table>
+            <tr>
+              <td><h3>{Fa1.name}</h3></td>
+              <td><h3>{Fa1.class}</h3></td>
+            </tr>
+          
+          </table>
         </div>
       ))}
     </div>
